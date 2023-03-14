@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="img/La Melena de sansón logo.png" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-md navbar-primary fixed-top bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#"><img src="img/La Melena de sansón logo.png " width="100">&nbsp&nbspLa Melena de Sansón</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link text-bg-light p-3" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bg-light p-3" href="productos.html">Servicios y Productos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-bg-light p-3" href="reservas.html">Reservas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-bg-light p-3" href="contactanos.html">Contactanos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <a href="iniciarsesion.html">
+                <button class="btn btn-danger" type="button">Iniciar sesión</button>&nbsp&nbsp&nbsp&nbsp
+              </a>
+              <img src="img/LogInIcon.png" alt="" width="30">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <a href="compras.html">
+                <button class="btn btn-light" type="button"><img src="img/ShoppinCart.png" alt="" width="30"></button>
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <link href="css/form-validation.css" rel="stylesheet">
+    
+<div class="container">
+  <main>
+    <div class="py-5">
+        <br><br><br><br>
+        <img class="d-block mx-auto mb-4" src="img/La Melena de sansón logo.png" alt="" width="200" height="200">
+        <h2>Registro</h2>
+        <p class="lead">Por favor llena todos los campos correspondientes para un registro satisfactorio.</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-7 col-lg-8">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nombre <span class="text-muted">(Obligatorio)</span></label>
+              <input type="text" class="form-control" id="firstName" placeholder="Juanito" value="" required>
+              <div class="invalid-feedback">
+                Valid Nombre requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido <span class="text-muted">(Obligatorio)</span></label>
+              <input type="text" class="form-control" id="lastName" placeholder="Herrera" value="" required>
+              <div class="invalid-feedback">
+                Valid Apellido requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+                <label for="lastName" class="form-label">Usuario <span class="text-muted">(Obligatorio)</span></label>
+                <input type="text" class="form-control" id="usuario" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid Usuario requerido.
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Contraseña <span class="text-muted">(Obligatorio)</span></label>
+                <input type="password" class="form-control" id="contraseña" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid Contraseña requerida.
+                </div>
+              </div>
+  
+
+            <div class="col-12">
+              <label for="email" class="form-label">Correo Electrónico <span class="text-muted">(Obligatorio)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="correo@correo.com">
+              <div class="invalid-feedback">
+                Por favor ingrese un correo electrónico válido
+              </div>
+            </div>
+          </div>
+          <br><br>
+
+          <div class="mx-auto alert bg-primary text-center text-light" style="width: 400px">Elige tu imagen de perfil</div>
+          <p></p>
+          <div class="mx-auto shadow-lg p-3 mb-3 mt-4 bg-body rounded border border-2 border-dark"> 
+              <div>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                  <label class="form-check-label" for="imagen1"></label>
+                  <input class="form-check-input" type="radio" name="imagenes" id="imagen1">
+                  <img src="img/Chad.jpg" class="rounded-circle border border-dark"
+                  width="100"
+                  height="100">
+                  
+                  <label class="form-check-label" for="imagen2"></label>
+                  <input class="form-check-input" type="radio" name="imagenes" id="imagen2">
+                  <img src="img/Juan.jpg" class="rounded-circle border border-dark"
+                  width="100"
+                  height="100">
+
+                  <label class="form-check-label" for="imagen3"></label>
+                  <input class="form-check-input" type="radio" name="imagenes" id="imagen3">
+                  <img src="img/Kanye.jpg" class="rounded-circle border border-dark"
+                  width="100"
+                  height="100">
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                
+                  <label class="form-check-label" for="imagen4"></label>
+                  <input class="form-check-input" type="radio" name="imagenes" id="imagen4">
+                  <img src="img/Elf.jpg" class="rounded-circle border border-dark"
+                  width="100"
+                  height="100">
+                  
+                  <label class="form-check-label" for="imagen5"></label>
+                  <input class="form-check-input" type="radio" name="imagenes" id="imagen5">
+                  <img src="img/DankCat.gif" class="rounded-circle border border-dark"
+                  width="100"
+                  height="100"> 
+              </div>
+          </div>
+          <br><br>
+          <button id="BTNregistrarse" class="w-100 btn btn-primary btn-lg" type="submit">Registrarse</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+<link href="css/product.css" rel="stylesheet">
+
+<hr class="featurette-divider">
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img src="img/La Melena de sansón logo.png" width="200" height="200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
+    </div>
+    <div class="col-6 col-md text-dark">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Home</a></li>
+        <li><a class="link-secondary" href="#">Servicios y Productos</a></li>
+        <li><a class="link-secondary" href="#">Reservas</a></li>
+        <li><a class="link-secondary" href="#">Contactanos</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-md text-dark">
+      <h5>Acerca de</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="equipotrabajo.html">Equipo de trabajo</a></li>
+        <li><a class="link-secondary" href="sedes.html">Sedes</a></li>
+        <li><a class="link-secondary" href="F.A.Q.html">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    <script src="Js/jquery-3.6.0.min.js"></script>
+    <script src="Js/registro.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/form-validation.js"></script>
+  </body>
+</html>

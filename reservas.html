@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Reservas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">    
+    <link rel="shortcut icon" href="img/La Melena de sansón logo.png" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-md navbar-primary fixed-top bg-primary">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand text-light" href="index.html"><img src="img/La Melena de sansón logo.png " width="100">&nbsp&nbspLa Melena de Sansón</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link text-bg-light p-3" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bg-light p-3" href="productos.html">Servicios y Productos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active text-bg-danger p-3" &nbsp&nbsp href="reservas.html">Reservas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-bg-light p-3" href="contactanos.html">Contactanos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <button id="bienvenida" class="btn btn-light" type="button"></button>&nbsp&nbsp&nbsp&nbsp
+              <img class="img-thumbnail" id="imgusuario" src="" alt="" width="60">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <a href="compras.html">
+                <button class="btn btn-light" type="button"><img src="img/ShoppinCart.png" alt="" width="30"></button>
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <br><br><br><br>
+    <div id="iniciarsesion" style="display:none;">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="img/La Melena de sansón logo.png" alt="" width="200" height="200">
+            <h2>Reservas</h2>
+            <p class="lead">Parece que no has iniciado sesión! Hazlo desde el siguiente botón o en la parte superior izquierda "iniciar sesion"</p>
+            <a href="iniciarsesion.html">
+                <button class="btn btn-lg btn-danger">Iniciar sesion</button>
+            </a>
+        </div>
+    </div>
+<div class="container" id="informacionreserva" style="display:none;">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="img/La Melena de sansón logo.png" alt="" width="200" height="200">
+      <h2>Reservas</h2>
+      <p class="lead">A continuación se mostrarán las opciones para realizar una reserva, por favor fijate bien en todo antes de realizar el pago (Las reservas se pueden hacer con 2 días de anticipación, solo se puedes tener una reserva a la vez)</p>
+    </div>
+
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Información de reserva</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Dia de la reserva</label>
+              <input type="date" id="txtDate" class="form-control" name="" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Día de la reserva requerido.
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+                <label for="horareserva" class="form-label">Hora de la reserva</label>
+                <select class="form-select" id="horareserva" required>
+                  <option value="">Elija...</option>
+                  <option>3:00 p.m</option> 
+                  <option>3:30 p.m</option>
+                  <option>4:00 p.m</option>
+                  <option>4:30 p.m</option>
+                  <option>5:00 p.m</option> 
+                  <option>5:30 p.m</option> 
+                  <option>6:00 p.m</option> 
+                  <option>6:30 p.m</option> 
+                  <option>7:00 p.m</option>
+                  <option>7:30 p.m</option>  
+                  <option>8:00 p.m</option> 
+                </select>
+                <div class="invalid-feedback">
+                  Por favor elija una hora.
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+              <label for="lugarreserva" class="form-label">Sede de la reserva</label>
+              <select class="form-select" id="lugarreserva" required>
+                <option value="">Elija...</option>
+                <option>Sede Laureles</option>
+                <option>Sede Poblado</option>
+                <option>Sede Bello</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor elija una sede.
+              </div>
+            </div>
+
+            <div class="col-md-5">
+                <label for="servicioreserva" class="form-label">Servicio deseado</label>
+                <select class="form-select" id="servicioreserva" required>
+                  <option value="">Elija...</option>
+                  <option>Corte</option>
+                  <option>Barba</option>
+                  <option>Corte + Barba</option>
+                  <option>Corte + Barba + Cejas</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor elija una sede.
+                </div>
+              </div>
+            </div>
+            
+          <hr class="my-4">
+
+          <button id="continuarpago" class="w-100 btn btn-primary btn-lg" type="submit">Continue al pago</button>
+          <div id="zonapago" style="display:none ;">
+
+          <hr class="my-4">
+
+          <h2 class="mb-3">Pago</h2>
+        
+          <div class="my-3">
+            <h5 id="totalpagar"></h5>
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="credit">Tarjeta de Crédito</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Tarjeta de Débito</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+              <div class="invalid-feedback">
+                Nombre en la tarjeta requerido
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número de la tarjeta</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Numero de la tarjeta requerido
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiración</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Día de expiración requerido
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Código de seguridad requerido
+              </div>
+            </div>
+
+            <div class="text-center fw-bold" id="inforeserva"></div>
+
+            <button id="realizarpago" class="w-100 btn btn-primary btn-lg" type="submit">Confirmar y realizar pago</button>
+          </div>
+        </div>
+          <hr class="my-4">
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>
+
+
+<link href="css/product.css" rel="stylesheet">
+
+<div class="b-example-divider"></div>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img src="img/La Melena de sansón logo.png" width="200" height="200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
+    </div>
+    <div class="col-6 col-md text-dark">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="index.html">Home</a></li>
+        <li><a class="link-secondary" href="productos.html">Servicios y Productos</a></li>
+        <li><a class="link" href="reservas.html">Reservas</a></li>
+        <li><a class="link-secondary" href="contactanos.html">Contactanos</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-md text-dark">
+      <h5>Acerca de</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="equipotrabajo.html">Equipo de trabajo</a></li>
+        <li><a class="link-secondary" href="sedes.html">Sedes</a></li>
+        <li><a class="link-secondary" href="F.A.Q.html">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script src="Js/jquery-3.6.0.min.js"></script>
+    <script src="Js/reservas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>

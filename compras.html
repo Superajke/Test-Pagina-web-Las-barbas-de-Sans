@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Compra</title>
+    <link rel="shortcut icon" href="img/La Melena de sansón logo.png" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/form-validation.css" rel="stylesheet">
+  </head>
+  <nav class="navbar navbar-expand-md navbar-primary fixed-top bg-primary">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand text-light" href="index.html"><img src="img/La Melena de sansón logo.png " width="100">&nbsp&nbspLa Melena de Sansón</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link text-bg-light p-3" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-bg-light p-3" href="productos.html">Servicios y Productos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-bg-light p-3" href="reservas.html">Reservas</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-bg-light p-3" href="contactanos.html">Contactanos</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <button id="bienvenida" class="btn btn-light" type="button"></button>&nbsp&nbsp&nbsp&nbsp
+          <img class="img-thumbnail" id="imgusuario" src="" alt="" width="60">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <a href="compras.html">
+            <button class="btn btn-danger" type="button"><img src="img/ShoppinCart.png" alt="" width="30"></button>
+          </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="iniciarsesion" style="display:none;">
+    <br><br><br><br>
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="img/La Melena de sansón logo.png" alt="" width="200" height="200">
+        <h2>Comprar</h2>
+        <p class="lead">Parece que no has iniciado sesión! Hazlo desde el siguiente botón o en la parte superior izquierda "iniciar sesion"</p>
+        <a href="iniciarsesion.html">
+            <button class="btn btn-lg btn-danger">Iniciar sesion</button>
+        </a>
+    </div>
+</div>
+
+  <body class="bg-light">
+    <br><br><br><br>
+    
+    <div class="container">
+      <main>
+        <div id="productoscompra" style="display: none;">
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="img/La Melena de sansón logo.png" alt="" width="200" height="200">
+          <h2>Comprar</h2>
+          <p class="lead">A continuación estará la información para realizar la compra de tus productos de "La melena de Sansón", por favor revisa todos los datos antes de realizar el pago.</p>
+        </div>
+
+        
+          <h3 class="mb-3 text-center">Productos a comprar</h3>
+          <hr class="my-4">
+          <div class="row g-3">
+            <div class="container bg-light">
+              <br>
+              <div class="row">
+                <div class="col-12 col-md text-start">
+                  <img src="img/ShampooHombre.png" width="200" height="300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24">
+                  <h4>Men+Care Dove</h4>
+                  <p class="lead mb-4 fw text-dark"><h6>Dove Men+Care celebra una nueva definición de fuerza: una enfocada en el cuidado. Porque Dove Men+Care cree que el cuidado hace a un hombre más fuerte.</h6>$20.000</p>
+                  <hr class="my-4">
+                </div>
+                <div class="col-6 col-md text-start">
+                  <img src="img/GelHombre.png" width="200" height="242" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24">
+                  <h4>Gel para el cabello para hombre "Casual Hold"</h4>
+                  <p class="lead mb-4 fw text-dark"><h6>Dove Men+Care celebra una nueva definición de fuerza: una enfocada en el cuidado. Porque Dove Men+Care cree que el cuidado hace a un hombre más fuerte.</h6>$15.000</p>
+                  <hr class="my-4">
+                </div>
+
+                <div class="col-6 col-md text-start">
+                  <img src="img/Cuchillas.png" width="200" height="200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24">
+                  <h4>Gillette Recambios de cuchillas de afeitar para hombre, 10 cartuchos Fusion5</h4>
+                  <p class="lead mb-4 fw text-dark"><h6>El paquete incluye 2 actualizaciones de recambio Fusion5 Proglide Blade Nuestras cuchillas más delgadas y finas para menos remolcamiento y tirón. Contiene más lubricantes y un toque de aceite mineral</h6>$30.000</p>
+                  <hr class="my-4">
+                </div>
+            
+                <div class="col-6 col-md text-start">
+                  <img src="img/CremaBarba.png" width="200" height="240" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24">
+                  <h4>BEERDS Mantequilla para barba</h4>
+                  <p class="lead mb-4 fw text-dark"><h6>Suaviza, repara y protege naturalmente, potenciada con lúpulo, mango, aguacate, karité, almendra dulce, coco, jojoba, cera de abejas, macadamia, semilla de uva y vitamina E (abedul vainilla)</h6>$40.000</p>
+                  <hr class="my-4">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-sm-3">
+              <label for="departamento" class="form-label">Men+Care Dove</label>
+              <select class="form-select" id="dove" required>
+                <option value="">0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <div class="col-sm-3">
+              <label for="departamento" class="form-label">Casual Hold</label>
+              <select class="form-select" id="gel" required>
+                <option value="">0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <div class="col-sm-3">
+              <label for="departamento" class="form-label">Gillette Cuchillas</label>
+              <select class="form-select" id="cuchillas" required>
+                <option value="">0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <div class="col-sm-3">
+              <label for="departamento" class="form-label">BEERDS Mantequilla barba</label>
+              <select class="form-select" id="beerds" required>
+                <option value="">0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <button id="agregarproductos" class="w-100 btn btn-primary btn-lg" type="button">Agregar Productos</button>
+          <hr class="my-4">
+        </div>
+          
+
+        <div id="dircompra" class="col-md-7 col-lg-8" style="display: none;">
+          <h4 class="mb-3">Dirección de compra</h4>
+          <form class="needs-validation" novalidate>
+          <div class="row g-3">
+              <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              </div>
+
+              <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              </div>
+
+              <div class="col-12">
+                  <label for="email" class="form-label">Correo <span class="text-muted">(Opcional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="correo@correo.com">
+              </div>
+
+              <div class="col-12">
+              <label for="address" class="form-label">Dirección de envío</label>
+              <input type="text" class="form-control" id="address" placeholder="Calle 11 #11-11" required>
+              </div>
+
+              <div class="col-md-5">
+              <label for="departamento" class="form-label">Departamento</label>
+              <select class="form-select" id="departamento" required>
+                  <option value="">Elija...</option>
+                  <option>Amazonas</option>
+                  <option>Antioquia</option>
+                  <option>Arauca</option>
+                  <option>Atlántico</option>
+                  <option>Bogotá</option>
+                  <option>Bolívar</option>
+                  <option>Boyacá</option>
+                  <option>Caldas</option>
+                  <option>Caquetá</option>
+              </select>
+              </div>
+
+              <div class="col-md-4">
+              <label for="state" class="form-label">Ciudad</label>
+              <select class="form-select" id="state" required>
+                  <option value="">Elija...</option>
+                  <option>Medellín</option>
+                  <option>Envigado</option>
+                  <option>Bello</option>
+                  <option>Barranquilla</option>
+                  <option>Bogotá</option>
+                  <option>Tunja</option>
+                  <option>Manizales</option>
+                  <option>Neiva</option>
+              </select>
+              </div>
+
+              <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="051052" required>
+              </div>
+          </div>
+          <br>
+          <button id="ingresarinfo" class="w-100 btn btn-primary btn-lg" type="button">Ingresar Información</button>
+          <hr class="my-4">
+        </div>
+          
+
+          
+        <div id="infopago" style="display:none ;">
+          <h2 class="mb-3">Pago</h2>
+        
+          <div class="my-3">
+            <h5 id="totalpagar"></h5>
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="credit">Tarjeta de Crédito</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Tarjeta de Débito</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+              <div class="invalid-feedback">
+                Nombre en la tarjeta requerido
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número de la tarjeta</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Numero de la tarjeta requerido
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiración</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Día de expiración requerido
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Código de seguridad requerido
+              </div>
+            </div>
+
+            <div class="text-center fw-bold" id="infoproductos"></div>
+
+          <button id="realizarpago" class="w-100 btn btn-primary btn-lg" type="submit">Confirmar y realizar pago</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="img/La Melena de sansón logo.png" width="200" height="200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
+        </div>
+        <div class="col-6 col-md text-dark">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="index.html">Home</a></li>
+            <li><a class="link-secondary" href="productos.html">Servicios y Productos</a></li>
+            <li><a class="link-secondary" href="reservas.html">Reservas</a></li>
+            <li><a class="link-secondary" href="contactanos.html">Contactanos</a></li>
+          </ul>
+        </div>
+    
+        <div class="col-6 col-md text-dark">
+          <h5>Acerca de</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="equipotrabajo.html">Equipo de trabajo</a></li>
+            <li><a class="link-secondary" href="sedes.html">Sedes</a></li>
+            <li><a class="link-secondary" href="F.A.Q.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    </div>
+
+    <script src="Js/jquery-3.6.0.min.js"></script>
+    <script src="Js/compras.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/form-validation.js"></script>
+</body>
+</html>
